@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div style="width:200px;display:flex;margin-left:20px;margin-top:20px;">
+   <form style="display:flex;flex-direction:column;" action="{% url 'task' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form}}
+       <input type="submit" value="upload"/>
+   </form>
+</div>
+
+</div>
+
+
+</body>
+</html>
